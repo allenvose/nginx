@@ -9,8 +9,5 @@ Vagrant.configure("2") do |config|
   	v.gui = "true"
   end
 
-  config.vm.provision "shell" do |s|
-    s.path "provision.sh"
-end
-
+  config.vm.provision "shell", path: "provision.sh"
 end
